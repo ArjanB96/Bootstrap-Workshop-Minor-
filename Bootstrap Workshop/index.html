@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Workshop</title>
+
+    <!-- Hier wordt de Bootstrap CDN aangeroepen om Bootstrap te gebruiken -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Eigen CSS-bestand -->
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Hier gebruiken wij ons eigen bestand script.js. Hier kan je bijvoorbeeld je eigen animaties in maken -->
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <!-- De navigatiebalk -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#home">Mijn Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#over">Over</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#diensten">Diensten</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- De tekst die bovenaan de webpagina staat, de Home Sectie -->
+    <div id="home" class="container text-center">
+            <h2>Welkom op mijn Bootstrap Site</h2>
+            <p>Dit is een eenvoudige responsieve pagina gemaakt met Bootstrap.</p>
+    </section>
+
+    <!-- Over Sectie-->
+    <div id="over" class="container text-center">
+        <h2>Over Ons</h2>
+        <!-- Inhoud van je Over Sectie-->
+        <p>Dit is een sectie waar je meer informatie kan geven over jezelf.</p>
+    </div>
+
+    <!-- Diensten (of eigen gewenste naam) Sectie -->
+    <div id="diensten" class="container text-center">
+        <h2>Onze Diensten</h2>
+
+        <div class="container">
+            <div class="row">
+                <!-- Kaart 1 -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Dienst 1</h5>
+                            <p class="card-text">Een beschrijving van Dienst 1.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kaart 2 -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Dienst 2</h5>
+                            <p class="card-text">Een beschrijving van Dienst 2.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kaart 3 -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Dienst 3</h5>
+                            <p class="card-text">Een beschrijving van Dienst 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
